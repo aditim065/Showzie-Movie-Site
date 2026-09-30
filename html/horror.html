@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Romance Movies | Showzie</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body class="dark-mode">
+
+  <!-- Header -->
+  <div id="nav-placeholder"></div>
+  <script src="nav.js"></script>
+
+  <!-- Hero Banner -->
+  <section class="hero-banner" style="background: url('https://www.denofgeek.com/wp-content/uploads/2021/02/Valak-as-the-Nun-in-The-Conjuring-Movies.png?fit=1200%2C708') center/cover no-repeat;">
+    <div class="hero-content">
+      <h1>Horror Collections</h1>
+      <p>Step into the shadows where every heartbeat could be your last</p>
+    </div>
+  </section>
+
+  <!-- Hooror Movies -->
+
+    <section class="movie-category">
+    <h2>Top Horror Picks</h2>
+    <div class="movie-cards">
+      <div class="movie-card" style="cursor: pointer;" onclick="gotopagehorror('1')">
+         <button class="watchlist-btn" onclick="addToWatchlist('Smile'); event.stopPropagation();">❤️</button>
+        <img src="https://saratogafalcon.org/wp-content/uploads/2023/02/scary-scary-scary-bad.png" alt="Smile" />
+        <h3>Smile</h3>
+        <p>⭐ 9.9</p>
+        <p class="desc">A cursed grin follows you home… and never leaves.</p>
+      </div>
+      <div class="movie-card" style="cursor: pointer;" onclick="gotopagehorror('2')" >
+        <button class="watchlist-btn" onclick="addToWatchlist('Pari'); event.stopPropagation();">❤️</button>
+        <img src="https://mibih.wordpress.com/wp-content/uploads/2018/10/pari.jpg" alt="Pari" />
+        <h3>Pari</h3>
+        <p>⭐ 8.4</p>
+        <p class="desc">A frieA mysterious woman with a haunting past draws an unsuspecting man into a world of supernatural terror and dark secrets.</p>
+      </div>
+      <div class="movie-card" style="cursor: pointer;" onclick="gotopagehorror('3')">
+           <button class="watchlist-btn" onclick="addToWatchlist('The Conjuring'); event.stopPropagation();">❤️</button>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTQVZQIuhY0v4iPfob1JUcPZulD_AO7KGD7w&s" alt="The Conjuring" />
+        <h3>The Conjuring</h3>
+        <p>⭐ 8.2</p>
+        <p class="desc">When evil whispers from the shadows, the Warrens answer the call.</p>
+      </div>
+       <div class="movie-card" style="cursor: pointer;" onclick="gotopagehorror('4')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Bhoothnath'); event.stopPropagation();">❤️</button>
+        <img src="https://m.media-amazon.com/images/S/pv-target-images/32a42246e5216df56aa8cf2e81fb25507870f20a936d6db9f1a417462997aa7e.jpg" alt="Bhoothnath" />
+        <h3>Bhoothnath</h3>
+        <p>⭐ 8.4</p>
+        <p class="desc">A friendly ghost and a fearless boy form an unlikely friendship in this heartwarming tale about love, loss, and letting go..</p>
+      </div>
+      <div class="movie-card" style="cursor: pointer;" onclick="gotopagehorror('5')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Aapthamitra'); event.stopPropagation();">❤️</button>
+        <img src="https://m.media-amazon.com/images/I/81duXR-7hOL._UF1000,1000_QL80_.jpg" alt="Ap" />
+        <h3>Aapthamitra</h3>
+        <p>⭐ 9.4</p>
+        <p class="desc">A haunted mansion, a vengeful spirit, and a secret buried in the past — this spine-chilling thriller blends horror with mystery and suspense.</p>
+      </div>
+       <div class="movie-card" style="cursor: pointer;" onclick="gotopagehorror('6')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Rangitharanga'); event.stopPropagation();">❤️</button>
+        <img src="https://upload.wikimedia.org/wikipedia/en/4/47/2015_Kannada_film_Rangitaranga_poster.jpg" alt="RT" />
+        <h3>Rangitharanga</h3>
+        <p>⭐ 9.8</p>
+        <p class="desc">A novelist’s search for truth leads to a mysterious village where folklore, dreams, and danger intertwine in this gripping thriller.</p>
+      </div>
+       <div class="movie-card" style="cursor: pointer;" onclick="gotopagehorror('7')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Kanchana 3'); event.stopPropagation();">❤️</button>
+        <img src="https://sund-images.sunnxt.com/82294/250x375_Kanchana3_82294_83544fc6-e408-4bcd-8323-45caa2e0678d.jpg" alt="K3" />
+        <h3>Kanchana 3</h3>
+        <p>⭐ 9.8</p>
+        <p class="desc">When a carefree man gets possessed by a vengeful spirit, chaos and comedy collide in this horror-filled entertainer.</p>
+      </div>
+       <div class="movie-card" style="cursor: pointer;" onclick="gotopagehorror('8')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Aranmanai 4'); event.stopPropagation();">❤️</button>
+        <img src="https://images.fandango.com/ImageRenderer/500/0/redesign/static/img/default_poster--dark-mode.png/0/images/masterrepository/Fandango/236017/aranmanai4-250x376.jpg" alt="RT" />
+        <h3>Aranmanai 4</h3>
+        <p>⭐ 8.3</p>
+        <p class="desc">When eerie events unfold in a mysterious palace, a man sets out to uncover the truth — only to face a deadly spirit from the past.
+</p>
+      </div>
+      <div class="movie-card" style="cursor: pointer;" onclick="gotopagehorror('9')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Arundathi'); event.stopPropagation();">❤️</button>
+        <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p194655_v_v8_ab.jpg" alt="Arundathi" />
+        <h3>Arundathi</h3>
+        <p>⭐ 9.3</p>
+        <p class="desc">A fearless woman battles a centuries-old evil spirit as past and present collide in this intense horror-fantasy thriller.
+</p>
+      </div>
+      <div class="movie-card" style="cursor: pointer;" onclick="gotopagehorror('10')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Pizza 3-The Mummy'); event.stopPropagation();">❤️</button>
+        <img src="https://m.media-amazon.com/images/S/pv-target-images/c5535033a3aa39213f8483efc516bf0f061092209834a77590613225be8916e9.jpg" alt="Pizza 3- The Mummy" />
+        <h3>Pizza 3-The Mummy</h3>
+        <p>⭐ 7.3</p>
+        <p class="desc">A young chef’s life spirals into terror as he uncovers the truth behind a cursed mummy and a string of mysterious deaths.
+
+
+</p>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+    <footer>
+    <script src="footer.js"></script>
+    </footer>
+
+</body>
+</html>

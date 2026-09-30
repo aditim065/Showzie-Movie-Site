@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Animated Movies | Showzie</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body class="dark-mode">
+
+  <!-- Header -->
+  <div id="nav-placeholder"></div>
+  <script src="nav.js"></script>
+
+  <!-- Hero Banner -->
+  <section class="hero-banner" style="background: url('https://assets.teenvogue.com/photos/578fbfac6e85f8db434d48e3/16:9/w_1872,h_1053,c_limit/Screen%20Shot%202016-07-20%20at%202.12.15%20PM.png') center/cover no-repeat;">
+    <div class="hero-content">
+      <h1>Animated Adventures</h1>
+      <p>Colorful stories, magical worlds, and unforgettable journeys.</p>
+    </div>
+  </section>
+
+  <!-- animation Movies -->
+
+  <section class="movie-category">
+    <h2>Animated</h2>
+    <div class="movie-cards">
+      <div class="movie-card"style="cursor: pointer;" onclick="gotopageanimated('1')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Moana'); event.stopPropagation();">❤️</button>
+        <img src="https://lumiere-a.akamaihd.net/v1/images/p_moana_20530_214883e3.jpeg" alt="Moana" />
+        <h3>Moana</h3>
+        <p>⭐ 8.9</p>
+        <p class="desc">Chosen by the ocean, she sails beyond the reef to restore what was lost.</p>
+
+      </div>
+      <div class="movie-card"style="cursor: pointer;" onclick="gotopageanimated('2')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Mufasa- The Lion King'); event.stopPropagation();">❤️</button>
+        <img src="https://m.media-amazon.com/images/I/A1z543w2WVL.jpg" alt="Elemental" />
+        <h3>Mufasa- The Lion King</h3>
+        <p>⭐ 8.2</p>
+        <p class="desc">Before Simba, there was Mufasa — a lion cub who rose from nothing to become a legendary king.</p>
+      </div>
+      <div class="movie-card"style="cursor: pointer;" onclick="gotopageanimated('3')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Elemental'); event.stopPropagation();">❤️</button>
+        <img src="https://m.media-amazon.com/images/S/pv-target-images/6ab1a7387a5971a36a576707f5e8f98611745fb78b6c5f90196fb4b6f839ec91.jpg" alt="Elemental" />
+        <h3>Elemental</h3>
+        <p>⭐ 7.2</p>
+        <p class="desc">Opposites by nature, united by heart in a world built to keep them apart.</p>
+      </div>
+      <div class="movie-card"style="cursor: pointer;" onclick="gotopageanimated('4')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Krishna aur kans'); event.stopPropagation();">❤️</button>
+        <img src="https://m.media-amazon.com/images/S/pv-target-images/0604e9011dabd26a2c7025571cb33db7e8ada1a043c3f2cf05a1a454f0a750fd.jpg" alt="Elemental" />
+        <h3>Krishna aur kans</h3>
+        <p>⭐ 9.2</p>
+        <p class="desc">The magical tale of young Krishna as he battles evil King Kansa and protects the world with love and courage.</p>
+      </div>
+      <div class="movie-card"style="cursor: pointer;" onclick="gotopageanimated('5')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Kung Fu Panda 4'); event.stopPropagation();">❤️</button>
+        <img src="https://www.dreamworks.com/storage/cms-uploads/kung-fu-panda-4-he-poster.jpg" alt="Kung Fu Panda 4" />
+        <h3>Kung Fu Panda 4</h3>
+        <p>⭐ 9.0</p>
+        <p class="desc">Po returns as the Dragon Warrior — but this time, he must train a new hero while facing a powerful new villain threatening the Valley of Peace..</p>
+      </div>
+      <div class="movie-card"style="cursor: pointer;" onclick="gotopageanimated('6')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Ghatothkach'); event.stopPropagation();">❤️</button>
+        <img src="https://m.media-amazon.com/images/M/MV5BMzMzMDA5NmQtNTE4ZC00ZDc4LWJmMjYtNzJjY2JkMjYyNzJlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Ghatothkach" />
+        <h3>Ghatothkach</h3>
+        <p>⭐ 9.0</p>
+        <p class="desc">The magical and mighty son of Bhima sets out on adventures filled with laughter, courage, and charm.</p>
+      </div>
+      <div class="movie-card"style="cursor: pointer;" onclick="gotopageanimated('7')">
+        <button class="watchlist-btn" onclick="addToWatchlist('The Smurfs'); event.stopPropagation();">❤️</button>
+        <img src="https://business.pearlanddean.com/wp-content/uploads/2024/06/Smurfs.jpg" alt="Ghatothkach" />
+        <h3>The Smurfs</h3>
+        <p>⭐ 9.2</p>
+        <p class="desc">Tiny blue creatures escape their magical village and take on the big world — spreading kindness, laughter, and mischief.</p>
+      </div>
+      <div class="movie-card"style="cursor: pointer;" onclick="gotopageanimated('8')">
+        <button class="watchlist-btn" onclick="addToWatchlist('The Jungle Book'); event.stopPropagation();">❤️</button>
+        <img src="https://lumiere-a.akamaihd.net/v1/images/p_thejunglebook2016_19751_6b8cfcec.jpeg?region=0%2C0%2C540%2C810" alt="Ghatothkach" />
+        <h3>The Jungle Book</h3>
+        <p>⭐ 9.0</p>
+        <p class="desc">Raised by wolves, a boy named Mowgli embarks on a wild journey of self-discovery through the Indian jungle.
+</p>
+      </div>
+      <div class="movie-card"style="cursor: pointer;" onclick="gotopageanimated('9')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Alvin and the chipmunks'); event.stopPropagation();">❤️</button>
+        <img src="https://m.media-amazon.com/images/M/MV5BMjI0NTc3MjU5M15BMl5BanBnXkFtZTcwODM4Nzg2Mg@@._V1_.jpg" alt="Ghatothkach" />
+        <h3>Alvin and the chipmunks</h3>
+        <p>⭐ 9.1</p>
+        <p class="desc">Three mischievous singing chipmunks turn the music world upside down — with chaos, comedy, and catchy hits!
+</p>
+      </div>
+      <div class="movie-card"style="cursor: pointer;" onclick="gotopageanimated('10')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Coco'); event.stopPropagation();">❤️</button>
+        <img src="https://lumiere-a.akamaihd.net/v1/images/p_coco_19736_fd5fa537.jpeg" alt="Ghatothkach" />
+        <h3>Coco</h3>
+        <p>⭐ 9.6</p>
+        <p class="desc">A young boy journeys to the Land of the Dead to discover his family's past — and the true meaning of music and memory.
+
+
+</p>
+      </div>
+       <div class="movie-card"style="cursor: pointer;" onclick="gotopageanimated('11')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Boss Baby'); event.stopPropagation();v">❤️</button>
+        <img src="https://m.media-amazon.com/images/M/MV5BMTg5MzUxNzgxNV5BMl5BanBnXkFtZTgwMTM2NzQ3MjI@._V1_.jpg" alt="Ghatothkach" />
+        <h3>Boss Baby</h3>
+        <p>⭐ 8.6</p>
+        <p class="desc">A suit-wearing, briefcase-carrying baby secretly on a mission teams up with his big brother to save the world of love.
+</p>
+      </div>
+       <div class="movie-card"style="cursor: pointer;" onclick="gotopageanimated('12')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Despicable Me'); event.stopPropagation();">❤️</button>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfSwi5a1u9-ykbiFUkHo0KbHJb6h_wKfb9Mg&s" alt="Ghatothkach" />
+        <h3>Despicable Me</h3>
+        <p>⭐ 9.1</p>
+        <p class="desc">An evil mastermind’s plan to steal the moon is flipped upside down by three adorable orphan girls… and a whole lot of Minions.
+</p>
+      </div>
+    </div>
+  </section>
+  
+  <div id="footer-placeholder"></div>
+    <footer>
+    <script src="footer.js"></script>
+    </footer>
+
+</body>
+</html>

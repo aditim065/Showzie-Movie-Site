@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Showzie</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <!-- Example Google Font (Replace or add more as needed) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- Header -->
+  <div id="nav-placeholder"></div>
+  <script src="nav.js"></script>
+  
+  <!-- Hero Banner -->
+  <section class="hero-banner">
+    <div class="hero-content">
+      <h1>The Buccaneers</h1>
+      <p>A story of rebellion, romance, and high society.</p>
+      <button id="trailerBtn">▶ Watch Now</button>
+    </div>
+  </section>
+
+  <!-- Trailer Modal -->
+  <div class="modal" id="trailerModal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/FaDFty5ipEg" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Genre Search -->
+  <section class="genre-search">
+    <div class="genres">
+      <button onclick="window.location.href='romance.html'">Romance</button>
+      <button onclick="window.location.href='horror.html'">Horror</button>
+      <button onclick="window.location.href='action.html'">Action</button>
+      <button onclick="window.location.href='sci-fi.html'">Sci-Fi</button>
+      <button onclick="window.location.href='drama.html'">Drama</button>
+      <button onclick="window.location.href='animated.html'">Animated</button>
+    </div>
+  </section>
+
+  <!-- JS for Watchlist Toggle -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const buttons = document.querySelectorAll(".watchlist-btn");
+      buttons.forEach(button => {
+        button.addEventListener("click", () => {
+          if (button.classList.contains("added")) {
+            button.textContent = "❤️ Add to MyList";
+            button.classList.remove("added");
+          } else {
+            button.textContent = "❌ Remove from MyList";
+            button.classList.add("added");
+          }
+        });
+      });
+    });
+  </script>
+
+  
+
+  <!-- Movie Sections -->
+  <!-- Trending Now -->
+  <section class="movie-category">
+    <h2>Trending Now</h2>
+    <div class="movie-cards">
+      <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist(`Grey's Anatomy`)">❤️</button>
+        <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p7894890_b_v10_ad.jpg" alt="Grey's Anatomy" />
+        <h3>Grey's Anatomy</h3>
+        <p>⭐ 9.2</p>
+        <p class="desc">Inside the OR and beyond, love, loss, and life collide in unforgettable ways.</p>
+      </div>
+      <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('The Resident')">❤️</button>
+        <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p14154590_b_v8_aa.jpg" alt="The Resident" />
+        <h3>The Resident</h3>
+        <p>⭐ 8.9</p>
+        <p class="desc">Beyond the white coats lies a battle for truth, sacrifice, and the cost of saving lives.</p>
+      </div>
+      <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Love Mocktail 2')">❤️</button>
+        <img src="https://m.media-amazon.com/images/M/MV5BMTAxZmRjZmUtNmE3Ni00MjZjLWJmNTYtNTczYWM1OTQ4ZTViXkEyXkFqcGc@._V1_.jpg" alt="Love Mocktail 2" />
+        <h3>Love Mocktail 2</h3>
+        <p>⭐ 9.4</p>
+        <p class="desc"> a romantic comedy-drama film about a man named Adi and his journey to find true love
+</p>
+      </div>
+      <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Aap Jaisa Koi')">❤️</button>
+        <img src="https://de.web.img3.acsta.net/img/57/29/5729f97a210e2d389205020398c93aa8.jpg" alt="Aap Jaisa Koi" />
+        <h3>Aap Jaisa Koi</h3>
+        <p>⭐ 7.3</p>
+        <p class="desc"> A bold romantic thriller exploring passion, betrayal, and the dark side of desire.
+</p>
+      </div>
+      <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('The Royals')">❤️</button>
+        <img src="https://images.filmibeat.com/ph-big/2025/04/the-royals-release-date-storyline-cast-and-streaming-details1745400943_4.jpg" alt="The Royals" />
+        <h3>The Royals</h3>
+        <p>⭐ 8.3</p>
+        <p class="desc"> A glitzy rom-com series where a modern CEO and a broke prince strike a royal deal that turns into unexpected love. </p>
+    </div>
+      <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist(`Thug Life`)">❤️</button>
+        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/thug-life-et00446928-1748844113.jpg" alt="Thug Life" />
+        <h3>Thug Life</h3>
+        <p>⭐ 8.2</p>
+        <p class="desc"> Gangster saga where loyalty and betrayal collide as a feared don's protégé rises against him.
+</p>
+      </div>
+       <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('HIT-The third case')">❤️</button>
+        <img src="https://preview.redd.it/hit-the-third-case-2025-review-discussion-thread-spoilers-v0-w14oz4m9lzxe1.jpg?width=4000&format=pjpg&auto=webp&s=ecfa9813e28c856d44e752902a3cfce0c54b71f4" alt="HIT-The third case"/>
+        <h3>HIT-The third case</h3>
+        <p>⭐ 9.2</p>
+        <p class="desc"> Crime thriller where investigator Arjun Sarkar delves into a chilling serial murder case that hits disturbingly close to home.
+</p>
+      </div>
+       <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Su From So')">❤️</button>
+        <img src="https://static.toiimg.com/photo/122795537.cms" alt="Su from So" />
+        <h3>Su from So</h3>
+        <p>⭐ 10</p>
+        <p class="desc"> Supernatural comedy‑drama about a boy’s innocent crush that unleashes ghostly chaos in a coastal village
+</p>
+     </div>
+     </div>
+     </div>
+     </section>
+  </section>
+
+  <!-- Now Playing -->
+  <section class="movie-category">
+    <h2>Continue Watching</h2>
+    <div class="movie-cards">
+      <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Googly')">❤️</button>
+        <img src="https://m.media-amazon.com/images/M/MV5BMTQ5NzQ5MDk3NF5BMl5BanBnXkFtZTgwMzIyMDU4MzE@._V1_.jpg" alt="Googly" />
+        <h3>Googly</h3>
+        <p>⭐ 9.5</p>
+        <p class="desc">A love story that swings like a googly—unexpected and unforgettable.</p>
+      </div>
+      <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Mona Lisa Smile')">❤️</button>
+        <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p33568_p_v10_ac.jpg" alt="Paramathma" />
+        <h3>Mona Lisa Smile</h3>
+        <p>⭐ 8.1</p>
+        <p class="desc">An inspiring art history professor challenges 1950s college women to embrace independence over tradition in this thought-provoking drama.</p>
+      </div>
+      <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Paramathma')">❤️</button>
+        <img src="https://upload.wikimedia.org/wikipedia/en/e/e5/Paramathma_poster.jpg" alt="Paramathma" />
+        <h3>Paramathma</h3>
+        <p>⭐ 9.1</p>
+        <p class="desc">A carefree soul searching for love in a world that tests his heart.</p>
+      </div>
+       <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Kung Fu Panda 4')">❤️</button>
+        <img src="https://www.dreamworks.com/storage/cms-uploads/kung-fu-panda-4-he-poster.jpg" alt="Kung Fu Panda 4" />
+        <h3>Kung Fu Panda 4</h3>
+        <p>⭐ 9.0</p>
+        <p class="desc">Po returns as the Dragon Warrior — but this time, he must train a new hero while facing a powerful new villain threatening the Valley of Peace..</p>
+      </div>
+      <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Bhoothnath')">❤️</button>
+        <img src="https://m.media-amazon.com/images/S/pv-target-images/32a42246e5216df56aa8cf2e81fb25507870f20a936d6db9f1a417462997aa7e.jpg" alt="Bhoothnath" />
+        <h3>Bhoothnath</h3>
+        <p>⭐ 8.4</p>
+        <p class="desc">A friendly ghost and a fearless boy form an unlikely friendship in this heartwarming tale about love, loss, and letting go..</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  
+<section class="about">
+    <h2>About Us</h2>
+    <p>Explore and discover your next watch!</p>
+  </section>
+
+  <!-- Footer -->
+     <div id="footer-placeholder"></div>
+    <footer>
+    <script src="footer.js"></script>
+    </footer>
+
+
+</body>
+</html>

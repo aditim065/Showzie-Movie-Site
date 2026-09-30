@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TV Shows - Showzie</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script> <!-- Only if toggleMode() and addToWatchlist() are defined here -->
+</head>
+<body>
+
+  <!-- Header -->
+   <div id="nav-placeholder"></div>
+  <script src="nav.js"></script>
+
+  <!-- TV Shows -->
+  <section class="movie-category">
+    <h2>All TV Shows</h2>
+    <div class="movie-cards grid-layout">
+      <div class="movie-card"style="cursor: pointer;" onclick="gotopagetvshows('1')">
+        <button class="watchlist-btn" onclick="addToWatchlist(`Grey's Anatomy`); event.stopPropagation();">❤️</button>
+        <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p7894890_b_v10_ad.jpg" alt="Grey's Anatomy" />
+        <h3>Grey's Anatomy</h3>
+        <p>⭐ 9.2</p>
+        <p class="desc">Inside the OR and beyond, love, loss, and life collide in unforgettable ways.</p>
+      </div>
+<div class="movie-card"style="cursor: pointer;" onclick="gotopagetvshows('2')">
+        <button class="watchlist-btn" onclick="addToWatchlist('The Royals'); event.stopPropagation();">❤️</button>
+        <img src="https://images.filmibeat.com/ph-big/2025/04/the-royals-release-date-storyline-cast-and-streaming-details1745400943_4.jpg" alt="The Royals" />
+        <h3>The Royals</h3>
+        <p>⭐ 8.3</p>
+        <p class="desc"> A glitzy rom-com series where a modern CEO and a broke prince strike a royal deal that turns into unexpected love. </p>
+    </div>
+      <div class="movie-card"style="cursor: pointer;" onclick="gotopagetvshows('3')">
+        <button class="watchlist-btn" onclick="addToWatchlist('The Resident'); event.stopPropagation();">❤️</button>
+        <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p14154590_b_v8_aa.jpg" alt="The Resident" />
+        <h3>The Resident</h3>
+        <p>⭐ 8.9</p>
+        <p class="desc">Beyond the white coats lies a battle for truth, sacrifice, and the cost of saving lives.</p>
+      </div>
+       <div class="movie-card"style="cursor: pointer;" onclick="gotopagetvshows('4')">
+         <button class="watchlist-btn" onclick="addToWatchlist('The Buccaneers'); event.stopPropagation();">❤️</button>
+        <img src="https://images.justwatch.com/poster/331848136/s718/the-buccaneers-0.jpg" alt="The Buccaneers" />
+        <h3>The Buccaneers</h3>
+        <p>⭐ 8.6</p>
+        <p class="desc">Bold American women take on the rigid world of 1870s British aristocracy — love, rebellion, and scandal ensue.
+
+</p>
+      </div>
+      <div class="movie-card"style="cursor: pointer;" onclick="gotopagetvshows('5')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Stranger Things'); event.stopPropagation();">❤️</button>
+        <img src="https://m.media-amazon.com/images/M/MV5BMjg2NmM0MTEtYWY2Yy00NmFlLTllNTMtMjVkZjEwMGVlNzdjXkEyXkFqcGc@._V1_.jpg" alt="The Resident" />
+        <h3>Stranger Things</h3>
+        <p>⭐ 8.6</p>
+        <p class="desc">A missing boy, a girl with powers, and a dark parallel world — welcome to Hawkins, where nothing is as it seems.
+
+</p>
+      </div>
+      <div class="movie-card"style="cursor: pointer;" onclick="gotopagetvshows('6')">
+        <button class="watchlist-btn" onclick="addToWatchlist('The Vampire Diaries'); event.stopPropagation();">❤️</button>
+        <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/vampire-diaries/0/05/Tvdseason2.jpg" alt="The Resident" />
+        <h3>The Vampire Diaries</h3>
+        <p>⭐ 8.2</p>
+        <p class="desc">In a town full of secrets, a teenage girl is torn between two vampire brothers — and a destiny darker than she ever imagined.</p>
+      </div>
+      <div class="movie-card"style="cursor: pointer;" onclick="gotopagetvshows('7')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Gossip Girl'); event.stopPropagation();">❤️</button>
+        <img src="https://images.justwatch.com/poster/178166654/s718/gossip-girl.jpg" alt="The Resident" />
+        <h3>Gossip Girl</h3>
+        <p>⭐ 9.0</p>
+        <p class="desc">In Manhattan’s elite, secrets spread fast… and no one is safe when Gossip Girl’s watching. XOXO.</p>
+      </div>
+      <div class="movie-card"style="cursor: pointer;" onclick="gotopagetvshows('8')">
+        <button class="watchlist-btn" onclick="addToWatchlist('The Family Man'); event.stopPropagation();">❤️</button>
+        <img src="https://i.pinimg.com/736x/b6/82/9e/b6829e3debc58390f504bcda0975a28a.jpg" alt="The Resident" />
+        <h3>The Family Man</h3>
+        <p>⭐ 7.9</p>
+        <p class="desc">He’s a middle-class dad by day and a top-secret spy by night — juggling family, danger, and national security.</p>
+      </div>
+      <div class="movie-card"style="cursor: pointer;" onclick="gotopagetvshows('9')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Peaky Blinders'); event.stopPropagation();">❤️</button>
+        <img src="https://m.media-amazon.com/images/M/MV5BOGM0NGY3ZmItOGE2ZC00OWIxLTk0N2EtZWY4Yzg3ZDlhNGI3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="The Resident" />
+        <h3>Peaky Blinders</h3>
+        <p>⭐ 9.9</p>
+        <p class="desc">A razor-sharp gangster rises from the streets of post-WWI Birmingham — with ambition, violence, and a plan.
+
+</p>
+      </div>
+      <div class="movie-card"style="cursor: pointer;" onclick="gotopagetvshows('10')">
+        <button class="watchlist-btn" onclick="addToWatchlist('The Modern Family'); event.stopPropagation();">❤️</button>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIhC88vwdr7vIaauJItYLXLX7SVREnN4bajQ&s" alt="The Resident" />
+        <h3>The Modern Family</h3>
+        <p>⭐ 9.5</p>
+        <p class="desc">One big family. Three different households. A million hilarious moments — and one unforgettable series.</p>
+      </div>
+      <div class="movie-card"style="cursor: pointer;" onclick="gotopagetvshows('11')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Never Have I Ever'); event.stopPropagation();">❤️</button>
+        <img src="https://m.media-amazon.com/images/M/MV5BNzdhOGVjMTQtOTQ0Yi00ZWNjLTk2MjMtMWMzODczNWNiNmM3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="The Resident" />
+        <h3>Never Have I Ever</h3>
+        <p>⭐ 8.9</p>
+        <p class="desc">A witty Indian-American teen navigates high school, grief, crushes, and chaos — all while trying to glow up.</p>
+      </div>
+      <div class="movie-card"style="cursor: pointer;" onclick="gotopagetvshows('12')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Outer Banks'); event.stopPropagation();">❤️</button>
+        <img src="https://dnm.nflximg.net/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABQ-JLdIftbjpq1egLdVnlCxSMHEk92lnsdyMVW1hlG112qc-W6-QFPzm212c5FYsjtjdIx9K7h2ZXZ5JMYF1OwVOXQ1Lw2G5dimNRWOFO_eOyc_Alh1n-wL3lN9OYvLIK_wvJQ.jpg?r=7d3" alt="The Resident" />
+        <h3>Outer Banks</h3>
+        <p>⭐ 9.2</p>
+        <p class="desc">Treasure maps, missing dads, and forbidden love — one summer changes everything for a crew of fearless teens.</p>
+      </div>
+       <div class="movie-card"style="cursor: pointer;" onclick="gotopagetvshows('13')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Gilmore Girls'); event.stopPropagation();">❤️</button>
+        <img src="https://saintjosephsquare.com/wp-content/uploads/2024/04/Screen-Shot-2024-04-17-at-9.27.05-AM.png" alt="The Resident" />
+        <h3>Gilmore Girls</h3>
+        <p>⭐ 8.7</p>
+        <p class="desc">A fast-talking mother and daughter navigate love, ambition, and life’s ups and downs in the quirky town of Stars Hollow — where coffee, charm, and deep bonds never run dry.</p>
+      </div>
+       <div class="movie-card"style="cursor: pointer;" onclick="gotopagetvshows('14')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Riverdale'); event.stopPropagation();">❤️</button>
+        <img src="https://m.media-amazon.com/images/I/81TM6i3wpPL._UF894,1000_QL80_.jpg" alt="The Resident" />
+        <h3>Riverdale</h3>
+        <p>⭐ 9.5</p>
+        <p class="desc">Beneath the surface of a seemingly innocent town, secrets simmer, friendships fracture, and a murder mystery awakens the darkness in everyone.</p>
+      </div>
+       <div class="movie-card"style="cursor: pointer;" onclick="gotopagetvshows('15')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Ginny and Georgia'); event.stopPropagation();">❤️</button>
+        <img src="https://static0.colliderimages.com/wordpress/wp-content/uploads/sharedimages/2025/05/03173710_poster_w780.jpg" alt="The Resident" />
+        <h3>Ginny & Georgia</h3>
+        <p>⭐ 8.2</p>
+        <p class="desc">A rebellious teen and her bold mother start fresh in a new town — but secrets, scandal, and survival threaten to unravel their picture-perfect life.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+    <footer>
+    <script src="footer.js"></script>
+    </footer>
+
+</body>
+</html>

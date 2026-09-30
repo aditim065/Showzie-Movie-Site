@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Romance Movies | Showzie</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body class="dark-mode">
+
+  <!-- Header -->
+ <div id="nav-placeholder"></div>
+  
+
+  <!-- Hero Banner -->
+  <section class="hero-banner" style="background: url('https://www.usatoday.com/gcdn/-mm-/efc4a5d180d1a2ea091b69bec22899f53c54ca39/c=0-114-2280-1402/local/-/media/2016/02/01/USATODAY/USATODAY/635899219648350647-MBY-07030r.jpg') center/cover no-repeat;">
+    <div class="hero-content">
+      <h1>Romantic Escapes</h1>
+      <p>Fall in love with stories that warm the heart and break it too.</p>
+    </div>
+  </section>
+
+  <!-- Romance Movies -->
+  <section class="movie-category">
+    <h2>Top Romance Picks</h2>
+    <div class="movie-cards">
+      <div class="movie-card"style="cursor: pointer;" onclick="gotopageromance('1')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Fault in Our Stars'); event.stopPropagation();">❤️</button>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiUtpMFoX8eh7mJT-F6HG6o9GquRi6TUEyxQ&s" alt="Fault in Our Stars" /></button>
+        <h3>Fault in Our Stars</h3>
+        <p>⭐ 8.0</p>
+        <p class="desc">A tender love story written in stardust, destined to burn bright and fade too soon.</p>
+      </div>
+      <div class="movie-card"style="cursor: pointer;" onclick="gotopageromance('2')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Love Mocktail'); event.stopPropagation();">❤️</button>
+        <img src="https://m.media-amazon.com/images/M/MV5BMTAxZmRjZmUtNmE3Ni00MjZjLWJmNTYtNTczYWM1OTQ4ZTViXkEyXkFqcGc@._V1_.jpg" alt="Love Mocktail 2" /></button>
+        <h3>Love Mocktail 2</h3>
+        <p>⭐ 9.4</p>
+        <p class="desc"> a romantic comedy-drama film about a man named Adi and his journey to find true love
+</p>
+      </div>
+      <div class="movie-card"style="cursor: pointer;" onclick="gotopageromance('3')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Geetha Govindam'); event.stopPropagation();">❤️</button>
+        <img src="https://www.behindwoods.com/tamil-movies/geetha-govindam/images/geetha-govindam-box-office-aug-19.jpg" alt="GG" /></button>
+        <h3>Geetha Govindam</h3>
+        <p>⭐ 8.6</p>
+        <p class="desc">A sweet, innocent man falls for a strong-willed woman — but one awkward mistake turns his dream into chaos in this fun rom-com..</p>
+      </div>
+      <div class="movie-card"style="cursor: pointer;" onclick="gotopageromance('4')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Titanic'); event.stopPropagation();">❤️</button>
+        <img src="https://upload.wikimedia.org/wikipedia/en/1/18/Titanic_%281997_film%29_poster.png" alt="Titanic" /></button>
+        <h3>Titanic</h3>
+        <p>⭐ 9.6</p>
+        <p class="desc">A forbidden love rises aboard a doomed voyage — grand, tragic, unforgettable.</p>
+      </div>
+       <div class="movie-card"style="cursor: pointer;" onclick="gotopageromance('5')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Om Shanthi Om'); event.stopPropagation();">❤️</button>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPkx9d5LipgucJqCOrMICfWGwRBUNR9XFK9g&s" alt="Om Shanthi Om" /></button>
+        <h3>Om Shanthi Om</h3>
+        <p>⭐ 9.8</p>
+        <p class="desc">A junior artist is reincarnated to avenge his death and reunite with his true love in this glamorous, time-bending Bollywood drama.</p>
+      </div>
+      <div class="movie-card"style="cursor: pointer;" onclick="gotopageromance('6')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Sita Ramam'); event.stopPropagation();">❤️</button>
+        <img src="https://bollyspice.com/wp-content/uploads/2022/08/48AED85D-15A7-4604-B854-81FD54DBDA18.jpeg" alt="SR" /></button>
+        <h3>Sita Ramam</h3>
+        <p>⭐ 9.6</p>
+        <p class="desc">A soldier’s letter changes lives as a timeless love story unfolds between duty, destiny, and deep emotion.</p>
+      </div>
+       <div class="movie-card"style="cursor: pointer;" onclick="gotopageromance('7')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Yeh Jawani Hai Deewani'); event.stopPropagation();">❤️</button>
+        <img src="https://upload.wikimedia.org/wikipedia/en/1/15/Yeh_jawani_hai_deewani.jpg" alt="YJHD" /></button>
+        <h3>Yeh Jawani Hai Deewani</h3>
+        <p>⭐ 9.7</p>
+        <p class="desc">A free-spirited traveler and a shy medical student explore love, friendship, and life’s crossroads in this coming-of-age Bollywood favorite.</p>
+      </div>
+      <div class="movie-card"style="cursor: pointer;" onclick="gotopageromance('8')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Googly'); event.stopPropagation();">❤️</button>
+        <img src="https://m.media-amazon.com/images/M/MV5BMTQ5NzQ5MDk3NF5BMl5BanBnXkFtZTgwMzIyMDU4MzE@._V1_.jpg" alt="Googly" /></button>
+        <h3>Googly</h3>
+        <p>⭐ 9.5</p>
+        <p class="desc">A love story that swings like a googly — unexpected and unforgettable.</p>
+      </div>
+      <div class="movie-card"style="cursor: pointer;" onclick="gotopageromance('9')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Paramathma'); event.stopPropagation();">❤️</button>
+        <img src="https://upload.wikimedia.org/wikipedia/en/e/e5/Paramathma_poster.jpg" alt="Paramathma" /></button>
+        <h3>Paramathma</h3>
+        <p>⭐ 9.1</p>
+        <p class="desc">A carefree soul searching for love in a world that tests his heart.</p>
+      </div>
+      <div class="movie-card"style="cursor: pointer;" onclick="gotopageromance('10')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Alaipayuthey'); event.stopPropagation();">❤️</button>
+        <img src="https://static.digit.in/OTT/v2/images/alaipayuthey-1253004.jpg" alt="Alaipayuthey" /></button>
+        <h3>Alaipayuthey</h3>
+        <p>⭐ 9.5</p>
+        <p class="desc">Love blooms in secret between two young souls, but the real story begins after marriage — where romance meets reality.</p>
+      </div>
+      <div class="movie-card"style="cursor: pointer;" onclick="gotopageromance('11')">
+        <button class="watchlist-btn" onclick="addToWatchlist('96'); event.stopPropagation();">❤️</button>
+        <img src="https://images.fandango.com/ImageRenderer/820/0/redesign/static/img/default_poster.png/0/images/masterrepository/fandango/214728/96-Movie-Poster.jpg" alt="96" /></button>
+        <h3>96</h3>
+        <p>⭐ 8.5</p>
+        <p class="desc">A soulful journey of love, memories, and missed chances as high school sweethearts reconnect after years apart..</p>
+      </div>
+       </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+    <footer>
+    <script src="footer.js"></script>
+    </footer>
+    <script src="nav.js"></script>
+</body>
+</html>

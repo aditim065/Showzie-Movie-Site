@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movies - Showzie</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <div id="nav-placeholder"></div>
+  <script src="nav.js"></script>
+
+  <!-- Movie Grid -->
+   
+  <section class="movie-category">
+    <h2>All Movies</h2>
+    <div class="movie-cards grid-layout"> 
+      <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Arundathi')">❤️</button>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiUtpMFoX8eh7mJT-F6HG6o9GquRi6TUEyxQ&s" alt="Fault in Our Stars" />
+        <h3>Fault in Our Stars</h3>
+        <p>⭐ 8.0</p>
+        <p class="desc">A tender love story written in stardust, destined to burn bright and fade too soon.</p>
+      </div>
+      <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Arundathi')">❤️</button>
+        <img src="https://m.media-amazon.com/images/M/MV5BMTAxZmRjZmUtNmE3Ni00MjZjLWJmNTYtNTczYWM1OTQ4ZTViXkEyXkFqcGc@._V1_.jpg" alt="Love Mocktail 2" />
+        <h3>Love Mocktail 2</h3>
+        <p>⭐ 9.4</p>
+        <p class="desc"> a romantic comedy-drama film about a man named Adi and his journey to find true love
+</p>
+      </div>
+      <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Arundathi')">❤️</button>
+        <img src="https://www.behindwoods.com/tamil-movies/geetha-govindam/images/geetha-govindam-box-office-aug-19.jpg" alt="GG" />
+        <h3>Geetha Govindam</h3>
+        <p>⭐ 8.6</p>
+        <p class="desc">A sweet, innocent man falls for a strong-willed woman — but one awkward mistake turns his dream into chaos in this fun rom-com..</p>
+      </div>
+      <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Arundathi')">❤️</button>
+        <img src="https://upload.wikimedia.org/wikipedia/en/1/18/Titanic_%281997_film%29_poster.png" alt="Titanic" />
+        <h3>Titanic</h3>
+        <p>⭐ 9.6</p>
+        <p class="desc">A forbidden love rises aboard a doomed voyage — grand, tragic, unforgettable.</p>
+      </div>
+       <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Arundathi')">❤️</button>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPkx9d5LipgucJqCOrMICfWGwRBUNR9XFK9g&s" alt="Om Shanthi Om" />
+        <h3>Om Shanthi Om</h3>
+        <p>⭐ 9.8</p>
+        <p class="desc">A junior artist is reincarnated to avenge his death and reunite with his true love in this glamorous, time-bending Bollywood drama.</p>
+      </div>
+      <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Arundathi')">❤️</button>
+        <img src="https://bollyspice.com/wp-content/uploads/2022/08/48AED85D-15A7-4604-B854-81FD54DBDA18.jpeg" alt="SR" />
+        <h3>Sita Ramam</h3>
+        <p>⭐ 9.6</p>
+        <p class="desc">A soldier’s letter changes lives as a timeless love story unfolds between duty, destiny, and deep emotion.</p>
+      </div>
+       <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Arundathi')">❤️</button>
+        <img src="https://upload.wikimedia.org/wikipedia/en/1/15/Yeh_jawani_hai_deewani.jpg" alt="YJHD" />
+        <h3>Yeh Jawani Hai Deewani</h3>
+        <p>⭐ 9.7</p>
+        <p class="desc">A free-spirited traveler and a shy medical student explore love, friendship, and life’s crossroads in this coming-of-age Bollywood favorite.</p>
+      </div>
+      <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Arundathi')">❤️</button>
+        <img src="https://m.media-amazon.com/images/M/MV5BMTQ5NzQ5MDk3NF5BMl5BanBnXkFtZTgwMzIyMDU4MzE@._V1_.jpg" alt="Googly" />
+        <h3>Googly</h3>
+        <p>⭐ 9.5</p>
+        <p class="desc">A love story that swings like a googly — unexpected and unforgettable.</p>
+      </div>
+      <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Arundathi')">❤️</button>
+        <img src="https://upload.wikimedia.org/wikipedia/en/e/e5/Paramathma_poster.jpg" alt="Paramathma" />
+        <h3>Paramathma</h3>
+        <p>⭐ 9.1</p>
+        <p class="desc">A carefree soul searching for love in a world that tests his heart.</p>
+      </div>
+      <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Arundathi')">❤️</button>
+        <img src="https://static.digit.in/OTT/v2/images/alaipayuthey-1253004.jpg" alt="Alaipayuthey" />
+        <h3>Alaipayuthey</h3>
+        <p>⭐ 9.5</p>
+        <p class="desc">Love blooms in secret between two young souls, but the real story begins after marriage — where romance meets reality.</p>
+      </div>
+      <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Arundathi')">❤️</button>
+        <img src="https://images.fandango.com/ImageRenderer/820/0/redesign/static/img/default_poster.png/0/images/masterrepository/fandango/214728/96-Movie-Poster.jpg" alt="96" />
+        <h3>96</h3>
+        <p>⭐ 8.5</p>
+        <p class="desc">A soulful journey of love, memories, and missed chances as high school sweethearts reconnect after years apart..</p>
+      </div>
+      <div class="movie-card">
+         <button class="watchlist-btn" onclick="addToWatchlist('The Resident')">❤️</button>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD-8mawWBbK06gYYC_99KULHsCuxYisanr51fWCeG9LtO_lH65-CDpSv3_il3DbFot0QY&usqp=CAU" alt="Avatar" />
+        <h3>Avatar</h3>
+        <p>⭐ 9.9</p>
+        <p class="desc">In the heart of Pandora, war and wonder collide beneath glowing skies.</p>
+
+      </div>
+      <div class="movie-card">
+         <button class="watchlist-btn" onclick="addToWatchlist('The Resident')">❤️</button>
+        <img src="https://m.media-amazon.com/images/M/MV5BMzcyMjMxOTg4MF5BMl5BanBnXkFtZTcwNzEwMDE5Ng@@._V1_FMjpg_UX1000_.jpg" alt="Raone" />
+        <h3>Ra.One</h3>
+        <p>⭐ 9.5</p>
+        <p class="desc">A video game villain comes to life, and only a father’s digital avatar can save the real world from destruction.</p>
+
+      </div>
+      <div class="movie-card">
+         <button class="watchlist-btn" onclick="addToWatchlist('The Resident')">❤️</button>
+        <img src="https://sund-images.sunnxt.com/17368/1000x1500_MukundaMurari_17368_b96e3ec1-a882-405b-b789-93230d3ef3e5.jpg" alt="MM" />
+        <h3>Mukunda Murari</h3>
+        <p>⭐ 9.2</p>
+        <p class="desc">An atheist takes God to court after a natural disaster ruins his shop — but what happens when God shows up in person?</p>
+      </div>
+      <div class="movie-card">
+         <button class="watchlist-btn" onclick="addToWatchlist('The Resident')">❤️</button>
+        <img src="https://upload.wikimedia.org/wikipedia/en/2/28/Krrish_3_%282013_film%29_poster.jpg" alt="Krishh3" />
+        <h3>Krishh 3</h3>
+        <p>⭐ 9.7</p>
+        <p class="desc">India’s superhero returns to battle a powerful mutant army and an evil genius threatening mankind’s survival.
+</p>
+      </div>
+      <div class="movie-card">
+         <button class="watchlist-btn" onclick="addToWatchlist('The Resident')">❤️</button>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Dune_%282021_film%29.jpg/250px-Dune_%282021_film%29.jpg" alt="Dune" />
+        <h3>Dune</h3>
+        <p>⭐ 7.2</p>
+        <p class="desc">A prophesied heir. A desert planet. And a war written in the sands of time.</p>
+      </div>
+      <div class="movie-card">
+         <button class="watchlist-btn" onclick="addToWatchlist('The Resident')">❤️</button>
+        <img src="https://m.media-amazon.com/images/S/pv-target-images/89d3982886114e0c91e45c0c49fc52cf74abf241a5e40aed8c829fdce1337856.jpg" alt="Avane Srimannarayana" />
+        <h3>Avane Srimannarayana</h3>
+        <p>⭐ 9.8</p>
+        <p class="desc">A quirky, clever cop sets out on a treasure hunt in a wild west-like fantasy land — where every clue hides a twist.</p>
+      </div>
+      <div class="movie-card">
+         <button class="watchlist-btn" onclick="addToWatchlist('The Resident')">❤️</button>
+        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/ui-2024-et00370266-1733467456.jpg" alt="UI" />
+        <h3>UI</h3>
+        <p>⭐ 7.0</p>
+        <p class="desc">A visionary man challenges societal norms in a dystopian battle of power and perception in this unconventional sci-fi psychological thriller.
+</p>
+      </div>
+      <div class="movie-card">
+         <button class="watchlist-btn" onclick="addToWatchlist('The Resident')">❤️</button>
+        <img src="https://usueasterneagle.com/wp-content/uploads/2024/06/ropoa.jpg" alt="ROPA" />
+        <h3>Rise of the planet of the apes</h3>
+        <p>⭐ 8.9</p>
+        <p class="desc">A genetically enhanced chimpanzee leads a revolution that could change the fate of both apes and mankind.
+</p>
+      </div>
+      <div class="movie-card">
+         <button class="watchlist-btn" onclick="addToWatchlist('The Resident')">❤️</button>
+        <img src="https://i.ebayimg.com/images/g/CwMAAOSw~WNnjY0U/s-l400.jpg" alt="Magadheera" />
+        <h3>Magadheera</h3>
+        <p>⭐ 9.0</p>
+        <p class="desc">A warrior from the past is reborn to reclaim his lost love and fulfill a 400-year-old destiny.
+</p>
+      </div>
+      <div class="movie-card">
+         <button class="watchlist-btn" onclick="addToWatchlist('The Resident')">❤️</button>
+        <img src="https://www.theclackamasprint.net/wp-content/uploads/2014/12/Interstellar-Movie-Poster.jpg" alt="Asoka" />
+        <h3>Interstellar</h3>
+        <p>⭐ 9.3</p>
+        <p class="desc">A pilot travels through a wormhole in search of a new home for humanity — but time, space, and love collide across galaxies.
+</p>
+      </div>
+      <div class="movie-card">
+         <button class="watchlist-btn" onclick="addToWatchlist('The Resident')">❤️</button>
+        <img src="https://upload.wikimedia.org/wikipedia/en/8/88/Asoka_%282001_film%29.jpg" alt="Asoka" />
+        <h3>Asoka</h3>
+        <p>⭐ 8.3</p>
+        <p class="desc">A warrior prince battles kingdoms and his own darkness — until he finds redemption in the path of peace.
+</p>
+      </div>
+       <div class="movie-card">
+         <button class="watchlist-btn" onclick="addToWatchlist('Smile')">❤️</button>
+        <img src="https://saratogafalcon.org/wp-content/uploads/2023/02/scary-scary-scary-bad.png" alt="Smile" />
+        <h3>Smile</h3>
+        <p>⭐ 9.9</p>
+        <p class="desc">A cursed grin follows you home… and never leaves.</p>
+      </div>
+      <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Pari')">❤️</button>
+        <img src="https://mibih.wordpress.com/wp-content/uploads/2018/10/pari.jpg" alt="Pari" />
+        <h3>Pari</h3>
+        <p>⭐ 8.4</p>
+        <p class="desc">A frieA mysterious woman with a haunting past draws an unsuspecting man into a world of supernatural terror and dark secrets.</p>
+      </div>
+      <div class="movie-card">
+           <button class="watchlist-btn" onclick="addToWatchlist('The Conjuring')">❤️</button>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTQVZQIuhY0v4iPfob1JUcPZulD_AO7KGD7w&s" alt="The Conjuring" />
+        <h3>The Conjuring</h3>
+        <p>⭐ 8.2</p>
+        <p class="desc">When evil whispers from the shadows, the Warrens answer the call.</p>
+      </div>
+       <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Bhoothnath')">❤️</button>
+        <img src="https://m.media-amazon.com/images/S/pv-target-images/32a42246e5216df56aa8cf2e81fb25507870f20a936d6db9f1a417462997aa7e.jpg" alt="Bhoothnath" />
+        <h3>Bhoothnath</h3>
+        <p>⭐ 8.4</p>
+        <p class="desc">A friendly ghost and a fearless boy form an unlikely friendship in this heartwarming tale about love, loss, and letting go..</p>
+      </div>
+      <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Aapthamitra')">❤️</button>
+        <img src="https://m.media-amazon.com/images/I/81duXR-7hOL._UF1000,1000_QL80_.jpg" alt="Ap" />
+        <h3>Aapthamitra</h3>
+        <p>⭐ 9.4</p>
+        <p class="desc">A haunted mansion, a vengeful spirit, and a secret buried in the past — this spine-chilling thriller blends horror with mystery and suspense.</p>
+      </div>
+       <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Rangitharanga')">❤️</button>
+        <img src="https://upload.wikimedia.org/wikipedia/en/4/47/2015_Kannada_film_Rangitaranga_poster.jpg" alt="RT" />
+        <h3>Rangitharanga</h3>
+        <p>⭐ 9.8</p>
+        <p class="desc">A novelist’s search for truth leads to a mysterious village where folklore, dreams, and danger intertwine in this gripping thriller.</p>
+      </div>
+       <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Kanchana 3')">❤️</button>
+        <img src="https://sund-images.sunnxt.com/82294/250x375_Kanchana3_82294_83544fc6-e408-4bcd-8323-45caa2e0678d.jpg" alt="K3" />
+        <h3>Kanchana 3</h3>
+        <p>⭐ 9.8</p>
+        <p class="desc">When a carefree man gets possessed by a vengeful spirit, chaos and comedy collide in this horror-filled entertainer.</p>
+      </div>
+       <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Aranmanai')">❤️</button>
+        <img src="https://images.fandango.com/ImageRenderer/500/0/redesign/static/img/default_poster--dark-mode.png/0/images/masterrepository/Fandango/236017/aranmanai4-250x376.jpg" alt="RT" />
+        <h3>Aranmanai 4</h3>
+        <p>⭐ 8.3</p>
+        <p class="desc">When eerie events unfold in a mysterious palace, a man sets out to uncover the truth — only to face a deadly spirit from the past.
+</p>
+      </div>
+      <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Arundathi')">❤️</button>
+        <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p194655_v_v8_ab.jpg" alt="Arundathi" />
+        <h3>Arundathi</h3>
+        <p>⭐ 9.3</p>
+        <p class="desc">A fearless woman battles a centuries-old evil spirit as past and present collide in this intense horror-fantasy thriller.
+</p>
+      </div>
+      <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Pizza 3-The Mummy')">❤️</button>
+        <img src="https://m.media-amazon.com/images/S/pv-target-images/c5535033a3aa39213f8483efc516bf0f061092209834a77590613225be8916e9.jpg" alt="Pizza 3- The Mummy" />
+        <h3>Pizza 3-The Mummy</h3>
+        <p>⭐ 7.3</p>
+        <p class="desc">A young chef’s life spirals into terror as he uncovers the truth behind a cursed mummy and a string of mysterious deaths.
+</p>
+      </div>
+      <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Drama')">❤️</button>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQISNU5KBvTGEWIwqzxrCWrY__UuCOubL-shg&s" alt="Paramathma" />
+        <h3>Drama</h3>
+        <p>⭐ 8.8</p>
+        <p class="desc">An inspiring art history professor challenges 1950s college women to embrace independence over tradition in this thought-provoking drama.</p>
+      </div>
+      <div class="movie-card">
+         <button class="watchlist-btn" onclick="addToWatchlist('The Resident')">❤️</button>
+        <img src="https://m.media-amazon.com/images/S/pv-target-images/91e1eaaca8ca64acaddc4da62f10e87eb474d30eee9dad4e07345c634a9f14e8.jpg" alt="Charlie" />
+        <h3>777 Charlie</h3>
+        <p>⭐ 9.1</p>
+        <p class="desc">A lonely man’s life changes when a stray dog named Charlie enters his world — a heartwarming journey of love, healing, and redemption.</p>
+      </div>
+      <div class="movie-card">
+         <button class="watchlist-btn" onclick="addToWatchlist('The Resident')">❤️</button>
+        <img src="https://images.justwatch.com/poster/331848136/s718/the-buccaneers-0.jpg" alt="The Buccaneers" />
+        <h3>The Buccaneers</h3>
+        <p>⭐ 8.6</p>
+        <p class="desc">Bold American women take on the rigid world of 1870s British aristocracy — love, rebellion, and scandal ensue.
+
+</p>
+      </div>
+      <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Mona Lisa Smile')">❤️</button>
+        <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p33568_p_v10_ac.jpg" alt="Paramathma" />
+        <h3>Mona Lisa Smile</h3>
+        <p>⭐ 8.1</p>
+        <p class="desc">An inspiring art history professor challenges 1950s college women to embrace independence over tradition in this thought-provoking drama.</p>
+      </div>
+       <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Su From So')">❤️</button>
+        <img src="https://static.toiimg.com/photo/122795537.cms" alt="Su from So" />
+        <h3>Su from So</h3>
+        <p>⭐ 10</p>
+        <p class="desc"> Supernatural comedy‑drama about a boy’s innocent crush that unleashes ghostly chaos in a coastal village
+</p>
+     </div>
+     <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Su From So')">❤️</button>
+        <img src="https://resizing.flixster.com/rYcj2hcdp1ffcGQQKtdmKhF82IE=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzdmMTk0MmQ2LTQzMmEtNGFmOC1hODEzLTRjNGRmOTFjYTQxNi53ZWJw" alt="Little Women" />
+        <h3>Little Women</h3>
+        <p>⭐ 9.4</p>
+        <p class="desc">Four sisters come of age during the American Civil War — discovering identity, love, and ambition on their own terms.
+</p>
+     </div>
+     <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Kantaara')">❤️</button>
+        <img src="https://plutusias.com/wp-content/uploads/2022/10/Kantara-Movie.jpg" alt="Kantaara" />
+        <h3>Kantaara</h3>
+        <p>⭐ 9.7</p>
+        <p class="desc"> In a coastal village, a fiery young man caught between tradition and law uncovers divine secrets tied to his ancestry.
+</p>
+     </div>
+      <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Kantaara')">❤️</button>
+        <img src="https://i.pinimg.com/474x/1d/58/41/1d5841de76103d0c7af3b6e021259353.jpg" alt="Majili" />
+        <h3>Majili</h3>
+        <p>⭐ 9.2</p>
+        <p class="desc"> A heartbroken ex-cricketer finds healing and love in an unexpected marriage — a soulful story of loss and redemption.
+</p>
+     </div>
+      <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Kantaara')">❤️</button>
+        <img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Raazi_-_Poster.jpg" alt="Raazi" />
+        <h3>Raazi</h3>
+        <p>⭐ 9.7</p>
+        <p class="desc"> An Indian woman marries into a Pakistani military family — but she’s secretly a spy risking everything for her country.
+</p>
+     </div>
+<div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Moana')">❤️</button>
+        <img src="https://lumiere-a.akamaihd.net/v1/images/p_moana_20530_214883e3.jpeg" alt="Moana" />
+        <h3>Moana</h3>
+        <p>⭐ 8.9</p>
+        <p class="desc">Chosen by the ocean, she sails beyond the reef to restore what was lost.</p>
+
+      </div>
+      <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Elemental')">❤️</button>
+        <img src="https://m.media-amazon.com/images/I/A1z543w2WVL.jpg" alt="Elemental" />
+        <h3>Mufasa- The Lion King</h3>
+        <p>⭐ 8.2</p>
+        <p class="desc">Before Simba, there was Mufasa — a lion cub who rose from nothing to become a legendary king.</p>
+      </div>
+      <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Elemental')">❤️</button>
+        <img src="https://m.media-amazon.com/images/S/pv-target-images/6ab1a7387a5971a36a576707f5e8f98611745fb78b6c5f90196fb4b6f839ec91.jpg" alt="Elemental" />
+        <h3>Elemental</h3>
+        <p>⭐ 7.2</p>
+        <p class="desc">Opposites by nature, united by heart in a world built to keep them apart.</p>
+      </div>
+      <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Elemental')">❤️</button>
+        <img src="https://m.media-amazon.com/images/S/pv-target-images/0604e9011dabd26a2c7025571cb33db7e8ada1a043c3f2cf05a1a454f0a750fd.jpg" alt="Elemental" />
+        <h3>Krishna aur kans</h3>
+        <p>⭐ 9.2</p>
+        <p class="desc">The magical tale of young Krishna as he battles evil King Kansa and protects the world with love and courage.</p>
+      </div>
+      <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Kung Fu Panda 4')">❤️</button>
+        <img src="https://www.dreamworks.com/storage/cms-uploads/kung-fu-panda-4-he-poster.jpg" alt="Kung Fu Panda 4" />
+        <h3>Kung Fu Panda 4</h3>
+        <p>⭐ 9.0</p>
+        <p class="desc">Po returns as the Dragon Warrior — but this time, he must train a new hero while facing a powerful new villain threatening the Valley of Peace..</p>
+      </div>
+      <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Kung Fu Panda 4')">❤️</button>
+        <img src="https://m.media-amazon.com/images/M/MV5BMzMzMDA5NmQtNTE4ZC00ZDc4LWJmMjYtNzJjY2JkMjYyNzJlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Ghatothkach" />
+        <h3>Ghatothkach</h3>
+        <p>⭐ 9.0</p>
+        <p class="desc">The magical and mighty son of Bhima sets out on adventures filled with laughter, courage, and charm.</p>
+      </div>
+      <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Kung Fu Panda 4')">❤️</button>
+        <img src="https://business.pearlanddean.com/wp-content/uploads/2024/06/Smurfs.jpg" alt="Ghatothkach" />
+        <h3>The Smurfs</h3>
+        <p>⭐ 9.2</p>
+        <p class="desc">Tiny blue creatures escape their magical village and take on the big world — spreading kindness, laughter, and mischief.</p>
+      </div>
+      <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Kung Fu Panda 4')">❤️</button>
+        <img src="https://lumiere-a.akamaihd.net/v1/images/p_thejunglebook2016_19751_6b8cfcec.jpeg?region=0%2C0%2C540%2C810" alt="Ghatothkach" />
+        <h3>The Jungle Book</h3>
+        <p>⭐ 9.0</p>
+        <p class="desc">Raised by wolves, a boy named Mowgli embarks on a wild journey of self-discovery through the Indian jungle.
+</p>
+      </div>
+      <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Kung Fu Panda 4')">❤️</button>
+        <img src="https://m.media-amazon.com/images/M/MV5BMjI0NTc3MjU5M15BMl5BanBnXkFtZTcwODM4Nzg2Mg@@._V1_.jpg" alt="Ghatothkach" />
+        <h3>Alvin and the chipmunks</h3>
+        <p>⭐ 9.1</p>
+        <p class="desc">Three mischievous singing chipmunks turn the music world upside down — with chaos, comedy, and catchy hits!
+</p>
+      </div>
+      <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Kung Fu Panda 4')">❤️</button>
+        <img src="https://lumiere-a.akamaihd.net/v1/images/p_coco_19736_fd5fa537.jpeg" alt="Ghatothkach" />
+        <h3>Coco</h3>
+        <p>⭐ 9.6</p>
+        <p class="desc">A young boy journeys to the Land of the Dead to discover his family's past — and the true meaning of music and memory.
+
+
+</p>
+      </div>
+       <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Kung Fu Panda 4')">❤️</button>
+        <img src="https://m.media-amazon.com/images/M/MV5BMTg5MzUxNzgxNV5BMl5BanBnXkFtZTgwMTM2NzQ3MjI@._V1_.jpg" alt="Ghatothkach" />
+        <h3>Boss Baby</h3>
+        <p>⭐ 8.6</p>
+        <p class="desc">A suit-wearing, briefcase-carrying baby secretly on a mission teams up with his big brother to save the world of love.
+</p>
+      </div>
+       <div class="movie-card">
+        <button class="watchlist-btn" onclick="addToWatchlist('Kung Fu Panda 4')">❤️</button>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfSwi5a1u9-ykbiFUkHo0KbHJb6h_wKfb9Mg&s" alt="Ghatothkach" />
+        <h3>Despicable Me</h3>
+        <p>⭐ 9.1</p>
+        <p class="desc">An evil mastermind’s plan to steal the moon is flipped upside down by three adorable orphan girls… and a whole lot of Minions.
+</p>
+      </div>
+       <div class="movie-card">
+         <button class="watchlist-btn" onclick="addToWatchlist('The Resident')">❤️</button>
+        <img src="https://upload.wikimedia.org/wikipedia/en/a/a5/Jurassic_World_Rebirth_poster.jpg" alt="Jurassic" />
+        <h3>Jurassic World Rebirth</h3>
+        <p>⭐ 8.5</p>
+        <p class="desc">When science crosses the line, ancient beasts return to rewrite the rules of nature.</p>
+      </div>
+      <div class="movie-card">
+         <button class="watchlist-btn" onclick="addToWatchlist('The Resident')">❤️</button>
+        <img src="https://images.plex.tv/photo?size=large-1280&url=https%3A%2F%2Fmetadata-static.plex.tv%2F2%2Fgracenote%2F276e6169ab31083dfa702d2410ce1ac1.jpg" alt="KGF" />
+        <h3>KGF- Chapter 2</h3>
+        <p>⭐ 9.8</p>
+        <p class="desc">The rise of Rocky continues as he battles new enemies and defends his empire in this high-voltage action spectacle.
+
+</p>
+      </div>
+      <div class="movie-card">
+         <button class="watchlist-btn" onclick="addToWatchlist('The Resident')">❤️</button>
+        <img src="https://m.media-amazon.com/images/M/MV5BMzI4M2I5YzAtYmUxMy00MDg1LTljYTgtNGM0ZTkwYmI3MGQxXkEyXkFqcGc@._V1_.jpg" alt="Max" />
+        <h3>Max</h3>
+        <p>⭐ 9.5</p>
+        <p class="desc">A single night of chaos as a suspended cop fights to clear his name and take on a dangerous criminal gang in this high-voltage thriller.</p>
+      </div>
+      <div class="movie-card">
+         <button class="watchlist-btn" onclick="addToWatchlist('The Resident')">❤️</button>
+        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/from-the-world-of-john-wick-ballerina-et00438964-1742536336.jpg" alt="Ballerina" />
+        <h3>Ballerina</h3>
+        <p>⭐ 7.9</p>
+        <p class="desc">A lethal assassin dances through vengeance in a haunting world of shadows.</p>
+      </div>
+       <div class="movie-card">
+         <button class="watchlist-btn" onclick="addToWatchlist('The Resident')">❤️</button>
+        <img src="https://www.dvdplanetstore.pk/wp-content/uploads/2015/09/bahubali-the-beginning-2015dvdplanetstorepk.jpg" alt="Bahubali" />
+        <h3>Bahubali-The Beginning</h3>
+        <p>⭐ 9.9</p>
+        <p class="desc">An epic saga of betrayal, valor, and destiny unfolds as a lost prince rises to reclaim his legacy and avenge his father's death.</p>
+      </div>
+      <div class="movie-card">
+         <button class="watchlist-btn" onclick="addToWatchlist('The Resident')">❤️</button>
+        <img src="https://m.media-amazon.com/images/I/91hIN+dNYUL._UF894,1000_QL80_.jpg" alt="Avengers" />
+        <h3>Avengers: Endgame</h3>
+        <p>⭐ 9.6</p>
+        <p class="desc">An epic saga of betrayal, valor, and destiny unfolds as a lost prince rises to reclaim his legacy and avenge his father's death.</p>
+      </div>
+      <div class="movie-card">
+         <button class="watchlist-btn" onclick="addToWatchlist('The Resident')">❤️</button>
+        <img src="https://upload.wikimedia.org/wikipedia/en/1/13/Dhoom_2_%282006_film%29_poster.jpg" alt="Dhoom 2" />
+        <h3>Dhoom 2</h3>
+        <p>⭐ 9.3</p>
+        <p class="desc">A daring thief, a relentless cop, and a cat-and-mouse chase across continents — style, stunts, and suspense collide.</p>
+      </div>
+       <div class="movie-card">
+         <button class="watchlist-btn" onclick="addToWatchlist('The Resident')">❤️</button>
+        <img src="https://m.media-amazon.com/images/M/MV5BMTM3ZGUwYTEtZTI5NS00ZmMyLTk2YmQtMWU4YjlhZTI3NjRjXkEyXkFqcGc@._V1_.jpg" alt="Kalki" />
+        <h3>Kalki</h3>
+        <p>⭐ 8.9</p>
+        <p class="desc">In a dystopian future, the prophecy of the 10th avatar of Vishnu awakens — blending mythology and science fiction like never before.</p>
+      </div>
+      <div class="movie-card">
+         <button class="watchlist-btn" onclick="addToWatchlist('The Resident')">❤️</button>
+        <img src="https://m.media-amazon.com/images/M/MV5BMDZmYzZiYjAtMTllZC00NDQwLWFkZGQtYzg0NjVkZTExYWJmXkEyXkFqcGc@._V1_.jpg" alt="war" />
+        <h3>War</h3>
+        <p>⭐ 9.2</p>
+        <p class="desc">An elite soldier goes rogue, and his protégé is sent to stop him — leading to a stylish, action-packed showdown across continents.</p>
+      </div>
+      <div class="movie-card">
+         <button class="watchlist-btn" onclick="addToWatchlist('The Resident')">❤️</button>
+        <img src="https://upload.wikimedia.org/wikipedia/en/3/3b/URI_-_New_poster.jpg" alt="Uri" />
+        <h3>Uri-The Surgical Strike</h3>
+        <p>⭐ 9.6</p>
+        <p class="desc">A gripping retelling of India’s bold military response to the Uri attack — where courage meets strategy in this war epic.
+
+</p>
+      </div>
+      <div class="movie-card">
+         <button class="watchlist-btn" onclick="addToWatchlist('The Resident')">❤️</button>
+        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/bigil-et00105457-1667802781.jpg" alt="Bigil" />
+        <h3>Bigil</h3>
+        <p>⭐ 9.1</p>
+        <p class="desc">A former footballer steps back onto the field — this time as a coach — to lead a women’s team to glory and justice.
+
+</p>
+      </div>
+      <div class="movie-card">
+         <button class="watchlist-btn" onclick="addToWatchlist('The Resident')">❤️</button>
+        <img src="https://m.media-amazon.com/images/S/pv-target-images/c2fe66281e0053e0c70730e4ec656a75a26149f3d7934bb57d969f19fbb717d1.jpg" alt="Jailer" />
+        <h3>Jailer</h3>
+        <p>⭐ 8.6</p>
+        <p class="desc">A quiet man with a deadly past unleashes fury when his family is threatened — Rajinikanth returns in full force.
+</p>
+      </div>
+       </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+    <footer>
+    <script src="footer.js"></script>
+    </footer>
+
+</body>
+</html>

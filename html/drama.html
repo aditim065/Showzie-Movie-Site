@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title><Sci-Fi></Sci-Fi> Movies | Showzie</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body class="dark-mode">
+
+  <!-- Header -->
+   <div id="nav-placeholder"></div>
+  <script src="nav.js"></script>
+
+  <!-- Hero Banner -->
+  <section class="hero-banner" style="background: url('https://static1.srcdn.com/wordpress/wp-content/uploads/2020/04/Greys-Anatomy-Cast-Featured-Image.jpg') center/cover no-repeat;">
+    <div class="hero-content">
+      <h1>Drama Delights</h1>
+      <p>Raw emotions, unforgettable stories — all in one reel..</p>
+    </div>
+  </section>
+
+  <!-- drama Movies -->
+  <section class="movie-category">
+    <h2>Drama</h2>
+    <div class="movie-cards"style="cursor: pointer;" onclick="gotopagedrama('1')"> <!--shelf-->
+      <div class="movie-card"> <!--many shelves-->
+         <button class="watchlist-btn" onclick="addToWatchlist('Greys Anatomy '); event.stopPropagation();">❤️</button>
+        <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p7894890_b_v10_ad.jpg" alt="Grey's" />
+        <h3>Grey's Anatomy</h3>
+        <p>⭐ 9.2</p>
+        <p class="desc">Inside the OR and beyond, love, loss, and life collide in unforgettable ways.</p>
+      </div>
+      <div class="movie-card"style="cursor: pointer;" onclick="gotopagedrama('2')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Paramathma'); event.stopPropagation();">❤️</button>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQISNU5KBvTGEWIwqzxrCWrY__UuCOubL-shg&s" alt="Paramathma" />
+        <h3>Paramathma</h3>
+        <p>⭐ 8.8</p>
+        <p class="desc">An inspiring art history professor challenges 1950s college women to embrace independence over tradition in this thought-provoking drama.</p>
+      </div>
+      <div class="movie-card"style="cursor: pointer;" onclick="gotopagedrama('3')">
+         <button class="watchlist-btn" onclick="addToWatchlist('The Resident'); event.stopPropagation();">❤️</button>
+        <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p14154590_b_v8_aa.jpg" alt="The Resident" />
+        <h3>The Resident</h3>
+        <p>⭐ 8.9</p>
+        <p class="desc">Beyond the white coats lies a battle for truth, sacrifice, and the cost of saving lives.</p>
+      </div>
+      <div class="movie-card"style="cursor: pointer;" onclick="gotopagedrama('4')">
+         <button class="watchlist-btn" onclick="addToWatchlist('777 Charlie'); event.stopPropagation();">❤️</button>
+        <img src="https://m.media-amazon.com/images/S/pv-target-images/91e1eaaca8ca64acaddc4da62f10e87eb474d30eee9dad4e07345c634a9f14e8.jpg" alt="Charlie" />
+        <h3>777 Charlie</h3>
+        <p>⭐ 9.1</p>
+        <p class="desc">A lonely man’s life changes when a stray dog named Charlie enters his world — a heartwarming journey of love, healing, and redemption.</p>
+      </div>
+      <div class="movie-card"style="cursor: pointer;" onclick="gotopagedrama('5')">
+         <button class="watchlist-btn" onclick="addToWatchlist('The Buccaneers'); event.stopPropagation();">❤️</button>
+        <img src="https://images.justwatch.com/poster/331848136/s718/the-buccaneers-0.jpg" alt="The Buccaneers" />
+        <h3>The Buccaneers</h3>
+        <p>⭐ 8.6</p>
+        <p class="desc">Bold American women take on the rigid world of 1870s British aristocracy — love, rebellion, and scandal ensue.
+
+</p>
+      </div>
+      <div class="movie-card"style="cursor: pointer;" onclick="gotopagedrama('6')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Mona Lisa Smile'); event.stopPropagation();">❤️</button>
+        <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p33568_p_v10_ac.jpg" alt="Paramathma" />
+        <h3>Mona Lisa Smile</h3>
+        <p>⭐ 8.1</p>
+        <p class="desc">An inspiring art history professor challenges 1950s college women to embrace independence over tradition in this thought-provoking drama.</p>
+      </div>
+       <div class="movie-card"style="cursor: pointer;" onclick="gotopagedrama('7')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Su From So'); event.stopPropagation();">❤️</button>
+        <img src="https://static.toiimg.com/photo/122795537.cms" alt="Su from So" />
+        <h3>Su from So</h3>
+        <p>⭐ 10</p>
+        <p class="desc"> Supernatural comedy‑drama about a boy’s innocent crush that unleashes ghostly chaos in a coastal village
+</p>
+     </div>
+     <div class="movie-card"style="cursor: pointer;" onclick="gotopagedrama('8')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Little Women'); event.stopPropagation();">❤️</button>
+        <img src="https://resizing.flixster.com/rYcj2hcdp1ffcGQQKtdmKhF82IE=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzdmMTk0MmQ2LTQzMmEtNGFmOC1hODEzLTRjNGRmOTFjYTQxNi53ZWJw" alt="Little Women" />
+        <h3>Little Women</h3>
+        <p>⭐ 9.4</p>
+        <p class="desc">Four sisters come of age during the American Civil War — discovering identity, love, and ambition on their own terms.
+</p>
+     </div>
+     <div class="movie-card"style="cursor: pointer;" onclick="gotopagedrama('9')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Kantaara'); event.stopPropagation();">❤️</button>
+        <img src="https://plutusias.com/wp-content/uploads/2022/10/Kantara-Movie.jpg" alt="Kantaara" />
+        <h3>Kantaara</h3>
+        <p>⭐ 9.7</p>
+        <p class="desc"> In a coastal village, a fiery young man caught between tradition and law uncovers divine secrets tied to his ancestry.
+</p>
+     </div>
+      <div class="movie-card"style="cursor: pointer;" onclick="gotopagedrama('10')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Majili'); event.stopPropagation();">❤️</button>
+        <img src="https://i.pinimg.com/474x/1d/58/41/1d5841de76103d0c7af3b6e021259353.jpg" alt="Majili" />
+        <h3>Majili</h3>
+        <p>⭐ 9.2</p>
+        <p class="desc"> A heartbroken ex-cricketer finds healing and love in an unexpected marriage — a soulful story of loss and redemption.
+</p>
+     </div>
+      <div class="movie-card"style="cursor: pointer;" onclick="gotopagedrama('11')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Raazi'); event.stopPropagation();">❤️</button>
+        <img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Raazi_-_Poster.jpg" alt="Raazi" />
+        <h3>Raazi</h3>
+        <p>⭐ 9.7</p>
+        <p class="desc"> An Indian woman marries into a Pakistani military family — but she’s secretly a spy risking everything for her country.
+</p>
+     </div>
+     <div class="movie-card"style="cursor: pointer;" onclick="gotopagedrama('12')">
+        <button class="watchlist-btn" onclick="addToWatchlist('Aap Jaisa Koi'); event.stopPropagation();">❤️</button>
+        <img src="https://de.web.img3.acsta.net/img/57/29/5729f97a210e2d389205020398c93aa8.jpg" alt="Aap Jaisa Koi" />
+        <h3>Aap Jaisa Koi</h3>
+        <p>⭐ 7.3</p>
+        <p class="desc"> A bold romantic thriller exploring passion, betrayal, and the dark side of desire.
+</p>
+      </div>
+    </div>
+    
+  </section>
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+    <footer>
+    <script src="footer.js"></script>
+    </footer>
+
+</body>
+</html>

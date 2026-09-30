@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Watchlist</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+ <div id="nav-placeholder"></div>
+  <script src="nav.js"></script>
+
+<section class="movie-category">
+  <h2>Mylist</h2>
+  <div class="movie-cards" id="watchlistContainer">
+    <!-- JS will populate here -->
+  </div>
+</section>
+
+<script>
+  const allMovies = {
+    "Ballerina": "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/from-the-world-of-john-wick-ballerina-et00438964-1742536336.jpg",
+    "Jurassic World Rebirth": "https://upload.wikimedia.org/wikipedia/en/a/a5/Jurassic_World_Rebirth_poster.jpg",
+    "Titanic": "https://upload.wikimedia.org/wikipedia/en/1/18/Titanic_%281997_film%29_poster.png",
+    "Googly": "https://m.media-amazon.com/images/M/MV5BMTQ5NzQ5MDk3NF5BMl5BanBnXkFtZTgwMzIyMDU4MzE@._V1_.jpg",
+    "Paramathma": "https://upload.wikimedia.org/wikipedia/en/e/e5/Paramathma_poster.jpg",
+    "Fault in Our Stars": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiUtpMFoX8eh7mJT-F6HG6o9GquRi6TUEyxQ&s",
+    "Smile": "https://saratogafalcon.org/wp-content/uploads/2023/02/scary-scary-scary-bad.png",
+    "The Conjuring": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTQVZQIuhY0v4iPfob1JUcPZulD_AO7KGD7w&s",
+    "Avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD-8mawWBbK06gYYC_99KULHsCuxYisanr51fWCeG9LtO_lH65-CDpSv3_il3DbFot0QY&usqp=CAU",
+    "Dune": "https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Dune_%282021_film%29.jpg/250px-Dune_%282021_film%29.jpg",
+    "Moana": "https://lumiere-a.akamaihd.net/v1/images/p_moana_20530_214883e3.jpeg",
+    "Elemental": "https://m.media-amazon.com/images/S/pv-target-images/6ab1a7387a5971a36a576707f5e8f98611745fb78b6c5f90196fb4b6f839ec91.jpg",
+    "Grey's Anatomy": "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p7894890_b_v10_ad.jpg",
+    "The Resident": "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p14154590_b_v8_aa.jpg"
+  };
+
+  const container = document.getElementById('watchlistContainer');
+  const watchlist = JSON.parse(localStorage.getItem('watchlist')) || [];
+
+  watchlist.forEach(title => {
+    const card = document.createElement('div');
+    card.className = 'movie-card';
+    card.innerHTML = `
+      <img src="${allMovies[title] || 'default.jpg'}" alt="${title}">
+      <h3>${title}</h3>
+      <p>❤️ Saved</p>
+    `;
+    container.appendChild(card);
+  });
+</script>
+
+<!--footer -->
+  <div id="footer-placeholder"></div>
+    <footer>
+    <script src="footer.js"></script>
+    </footer>
+
+
+</body>
+</html>

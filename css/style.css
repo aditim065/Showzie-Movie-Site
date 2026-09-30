@@ -1,0 +1,395 @@
+/* MovieVibe: Dark & Dramatic Theme */
+
+body {
+  margin: 0;
+  background-color: #111;
+  color: rgb(242, 240, 238);
+}
+
+a {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+  text-decoration: none;
+  color: rgb(239, 5, 5);
+}
+
+/* Header */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #000;
+  border-bottom: 1px solid #333;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  font-size: 18px;
+  color: red;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: beige;
+}
+
+.search input {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #111111;
+  color: white;
+  
+}
+
+.user-settings {
+    
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-settings a:hover {
+  color: white; /* Red on hover */
+}
+
+.toggle-mode {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+/* transition for background and text */
+body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.light-mode {
+  background-color: #f5f5f5; /* light mode */
+  color: #111;
+}
+
+/* target other elements */
+
+.light-mode .search input{
+    background-color: transparent;
+}
+/*header block */
+.light-mode .main-header {      
+  background-color: #fff;
+  border-bottom: 1px solid #0f0f0f;
+}
+/*original in light mode*/
+.light-mode .nav-links a{    
+    color: #0d0d0d;
+}
+/* home, mylist,categories*/
+.light-mode .nav-links a:hover{   
+    background-color: white;
+    color: red;
+}
+ /* settings Black text in light mode */
+.light-mode .user-settings a {
+  color: #111;
+}
+ /* settings Red hover in light mode when hovered*/
+.light-mode .user-settings a:hover {
+  color: #e40909;
+}
+/*serach bar in light mode*/
+.light-mode .search input{
+    background-color: whitesmoke;
+    color: #000;
+}
+/*hero content in white mode*/
+.light-mode .hero-content h1,
+.light-mode .hero-content p {
+  color: #fbf8f8;
+}
+
+/*for movie cards light mode font color*/
+.light-mode .movie-cards{
+    color: white;
+}
+/*movie card light mode*/
+.light-mode .movie-card{
+    background-color: #d1cdd1;
+    color: #000;
+}
+
+.light-mode  .about, .light-mode .site-footer{
+    background-color: white;
+    color: #000;
+}
+
+.light-mode  .genres button{
+    border: 2px solid black;
+    background-color: transparent;
+  color: black;
+
+}
+/* Hero Banner */
+.hero-banner {
+  background: url('https://m.media-amazon.com/images/S/pv-target-images/65e2bd866ddab06aa8c0e5d7b3f5b8eb091ff0bf41590806a895f0687196b460._SX1080_FMjpg_.jpg') center/cover no-repeat;
+  height: 100vh;
+  /*border-radius: 20px;
+  overflow: hidden; for rounding the edges*/
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 1.5s ease-in;
+}
+
+.hero-banner::before {  /*Adds a layer before the content inside .hero-banner*/
+  content: ""; /**/
+  position: absolute;
+  inset: 0;/* left: 0; right: 0; bottom: 0;*/
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero-content button {
+  background-color: #E50914;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(1.03); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+  margin: 10% auto;
+  padding: 20px;
+  width: 80%;
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  position: relative;
+}
+
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #fff;
+}
+
+/* Genre Filters */
+.genre-search {
+  padding: 30px 40px;
+  text-align: center;
+}
+
+.genres {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.genres button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 999px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.genres button:hover {
+  background-color: #e50914;
+  color: white;
+  box-shadow: 0 0 10px #e50914;
+}
+
+/* Movie Categories */
+.movie-category {
+  padding: 40px;
+}
+
+.movie-category h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+  margin-bottom: 20px;
+  color: #e50914;
+}
+
+/*shelf*/
+
+.movie-cards {
+  display: flex;
+  gap: 20px;
+  overflow-y: hidden;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  padding: 10px 0;
+  scrollbar-width: thin;
+  -ms-overflow-style: none;
+}
+
+.movie-card {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 160px;
+  background-color: #1b1b1b;
+  border-radius: 8px;
+  color: white;
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.movie-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #e50914;
+}
+
+/* Grid layout for movies & TV shows */
+.grid-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: flex-start;
+  padding: 10px 0;
+  overflow-x: unset;
+  scroll-snap-type: none;
+}
+
+
+
+/* About */
+.about {
+  padding: 40px;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+.about h2 {
+  color: #e50914;
+}
+
+/* Footer */
+.site-footer {
+  background-color: black;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid #333;
+}
+
+.footer-note {
+  margin-top: 15px;
+  color: #777;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .movie-cards {
+    justify-content: center;
+  }
+
+  .movie-card {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+/*for mylist*/
+.watchlist-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.watchlist-btn {
+  background-color: transparent;
+  color: white;
+ 
+  padding: 6px 14px;
+
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  max-width: 90%;      /* Prevents stretching too wide */
+  text-align: center;
+}
+
+.watchlist-btn:hover {
+  background-color: #e50914;
+  color: white;
+}
+
+
